@@ -1,6 +1,7 @@
 #!/usr/sbin/dtrace -s
 
 # displays the amount of data synced from dirty data memory to the pool and how much it took to sync it (write it to the pool)
+# run it with the pool name as the first argument, e.g. ./zfs-dirty.d mypool
 # example output
 # CPU     ID                    FUNCTION:NAME
 #   2  82272                  none:txg-synced 7464MB of 9804MB synced in 32.64 seconds
